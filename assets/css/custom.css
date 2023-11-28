@@ -1,3 +1,6 @@
+  
+  @import '/scss/_functions';
+  
 #cart {
     filter: invert(1) brightness(0.5);
 }
@@ -16,3 +19,11 @@
     object-fit: cover;
     transform: scale(0.2) translate(0, 5%);
   }
+
+  .gradient-text {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#fdb61a,#fe991f, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
