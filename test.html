@@ -1,0 +1,332 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav li {
+      margin-left: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .nav a:hover {
+      color: #555;
+    }
+
+    .hero {
+      display: flex;
+      height: 80vh;
+      background-image: url(https://colorlib.com/wp/minimalist-website-examples/);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      width: 40%;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hero-text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .hero-button:hover {
+      background-color: #555;
+    }
+
+    .section {
+      padding: 40px;
+    }
+
+    .section-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .section-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .section-item-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .section-item-text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .section-item-button {
+      display: inline-block;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .section-item-button:hover {
+      background-color: #555;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .footer-nav {
+      display: flex;
+      list-style: none;
+    }
+
+    .footer-nav li {
+      margin-left: 20px;
+    }
+
+    .footer-nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .footer-nav a:hover {
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      .section-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Mair Enterprises</div>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Single Window Solutions for IT, Audio-Video, Office Automation and More</h1>
+        <p class="hero-text">We are a dedicated team of professionals offering a wide range of solutions for SMB, SME, Large MNC, Corporate, Education Institutes and Hotels. We are channel partners of BenQ, Epson, XEROX, Panasonic, Sony, HP, Polycom, Logitech, Maxhub, Newline and many other brands.</p>
+        <button class="hero-button">Learn More</button>
+      </div>
+    </div>
+    <div class="section">
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-text">We provide the following products (Sale, Service, Consumables & Rental) to meet your needs:</p>
+      <div class="section-grid">
+        <div class="section-item">
+          <img src="^2^" alt="Desktops">
+          <h3 class="section-item-title">Desktops</h3>
+          <p class="section-item-text">We offer a variety of desktops from leading brands such as HP, Dell, Lenovo and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^3^" alt="Laptops">
+          <h3 class="section-item-title">Laptops</h3>
+          <p class="section-item-text">We offer a variety of laptops from leading brands such as HP, Dell, Lenovo and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^4^" alt="Servers">
+          <h3 class="section-item-title">Servers</h3>
+          <p class="section-item-text">We offer a variety of servers from leading brands such as HP, Dell, Lenovo and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^5^" alt="UPS">
+          <h3 class="section-item-title">UPS</h3>
+          <p class="section-item-text">We offer a variety of UPS from leading brands such as APC, Microtek, Luminous and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^6^" alt="Audio-Video Conf. System">
+          <h3 class="section-item-title">Audio-Video Conf. System</h3>
+          <p class="section-item-text">We offer a variety of audio-video conferencing systems from leading brands such as Polycom, Logitech, Maxhub and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^7^" alt="Photocopiers">
+          <h3 class="section-item-title">Photocopiers</h3>
+          <p class="section-item-text">We offer a variety of photocopiers from leading brands such as XEROX, Canon, Ricoh and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^8^" alt="Projectors">
+          <h3 class="section-item-title">Projectors</h3>
+          <p class="section-item-text">We offer a variety of projectors from leading brands such as BenQ, Epson, Sony and more.</p>
+          <button class="section-item-button">Buy Now</button>
+        </div>
+        <div class="section-item">
+          <img src="^9^" alt="Interactive Flat Panels">
+          <h3 class="section-item-title">Interactive Flat Panels</h3>
+          <p class="section-item-text">We offer a variety of interactive flat panels from leading brands such as Newline, Maxhub, Samsung and more.</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-text">We provide the following services to meet your needs:</p>
+        <div class="section-grid">
+          <div class="section-item">
+            <img src="^10^" alt="IT - Networking Products - Wi-fi">
+            <h3 class="section-item-title">IT - Networking Products - Wi-fi</h3>
+            <p class="section-item-text">We provide IT and networking solutions such as routers, switches, firewalls, access points, and more.</p>
+            <button class="section-item-button">Learn More</button>
+          </div>
+          <div class="section-item">
+            <img src="^11^" alt="Security Solutions - CCTV Surv.">
+            <h3 class="section-item-title">Security Solutions - CCTV Surv.</h3>
+            <p class="section-item-text">We provide security solutions such as CCTV cameras, DVRs, NVRs, monitors, and more.</p>
+            <button class="section-item-button">Learn More</button>
+          </div>
+          <div class="section-item">
+            <img src="^12^" alt="Board room - Conf. room - Server room">
+            <h3 class="section-item-title">Board room - Conf. room - Server room</h3>
+            <p class="section-item-text">We provide board room, conference room, and server room solutions such as furniture, lighting, sound, and more.</p>
+            <button class="section-item-button">Learn More</button>
+          </div>
+          <div class="section-item">
+            <img src="^13^" alt="Home Theater">
+            <h3 class="section-item-title">Home Theater</h3>
+            <p class="section-item-text">We provide home theater solutions such as speakers, amplifiers, projectors, screens, and more.</p>
+            <button class="section-item-button">Learn More</button>
+          </div>
+          <div class="section-item">
+            <img src="^14^" alt="Smart Class">
+            <h3 class="section-item-title">Smart Class</h3>
+            <p class="section-item-text">We provide smart class solutions such as interactive whiteboards, tablets, laptops, and more.</p>
+            <button class="section-item-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-logo">Mair Enterprises</div>
+        <ul class="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  </html>
+  
